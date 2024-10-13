@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Puno - Explora la Magia del Titicaca</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        #map {
+            height: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .hero-pattern {
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .category-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .category-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .custom-marker {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .route-animation {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 3s linear forwards;
+        }
+        
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        .weather-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .loading-overlay {
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <div class="hero-pattern text-white">
+        <div class="container mx-auto px-6 py-16">
+            <nav class="flex justify-between items-center mb-16">
+                <h1 class="text-3xl font-bold">Descubre Puno</h1>
+                <div id="weather-info" class="weather-card p-3 rounded-lg flex items-center space-x-3 animate__animated animate__fadeIn"></div>
+            </nav>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="animate__animated animate__fadeInLeft">
+                    <h2 class="text-4xl font-bold mb-6">Explora la Magia del Titicaca</h2>
+                    <p class="text-xl mb-8">Descubre los mejores lugares, sabores y experiencias que Puno tiene para ofrecer.</p>
+                    <div class="flex space-x-4">
+                        <button id="find-me" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                            <i class="fas fa-location-arrow mr-2"></i>Encontrar mi ubicación
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden md:block animate__animated animate__fadeInRight">
+                    <img src="3.jpg" alt="Puno landscape" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-12">
+        <!-- Categories Section -->
+        <div class="mb-12 animate__animated animate__fadeInUp">
+            <h3 class="text-2xl font-semibold mb-6">¿Qué quieres explorar?</h3>
+            <div class="grid grid-cols-3 gap-6">
+                <button class="category-btn bg-white p-6 rounded-xl shadow-lg text-center card-hover" data-category="hotel">
+                    <i class="fas fa-hotel text-3xl mb-4 text-blue-500"></i>
+                    <h4 class="text-xl font-semibold">Hoteles</h4>
+                    <p class="text-gray-600 mt-2">Encuentra el mejor lugar para descansar</p>
+                </button>
+                <button class="category-btn bg-white p-6 rounded-xl shadow-lg text-center card-hover" data-category="restaurant">
+                    <i class="fas fa-utensils text-3xl mb-4 text-green-500"></i>
+                    <h4 class="text-xl font-semibold">Restaurantes</h4>
+                    <p class="text-gray-600 mt-2">Descubre la gastronomía local</p>
+                </button>
+                <button class="category-btn bg-white p-6 rounded-xl shadow-lg text-center card-hover" data-category="attraction">
+                    <i class="fas fa-landmark text-3xl mb-4 text-purple-500"></i>
+                    <h4 class="text-xl font-semibold">Atracciones</h4>
+                    <p class="text-gray-600 mt-2">Explora los lugares más emblemáticos</p>
+                </button>
+            </div>
+        </div>
+
+        <!-- Map and Filters Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div id="map" class="animate__animated animate__fadeIn"></div>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl shadow-lg p-6 animate__animated animate__fadeInRight">
+                    <h3 class="text-xl font-semibold mb-4">Filtros</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-medium mb-2">Calificación mínima</h4>
+                        <div class="flex space-x-2" id="ratingFilter">
+                            <button class="rating-btn px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors" data-rating="0">Todas</button>
+                            <button class="rating-btn px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors" data-rating="3">3★+</button>
+                            <button class="rating-btn px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors" data-rating="4">4★+</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-medium mb-2">Distancia máxima</h4>
+                        <input type="range" min="1" max="10" value="5" class="w-full" id="distanceRange">
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>1 km</span>
+                            <span id="distanceValue">5 km</span>
+                            <span>10 km</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="poiList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12"></div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden loading-overlay">
+        <div class="bg-white p-6 rounded-lg shadow-xl flex flex-col items-center">
+            <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500 mb-4"></div>
+            <p class="text-lg font-semibold">Cargando...</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script>
+        let map, userMarker, routeLayer;
+        const markers = {};
+        let currentCategory = null;
+        let currentRating = 0;
+        let maxDistance = 5;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMap();
+            setupEventListeners();
+            
+            // Intentar obtener la ubicación automáticamente
+            getUserLocation();
+        });
+
+        function initializeMap() {
+            map = L.map('map').setView([-15.8403, -70.0217], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+        }
+
+        function setupEventListeners() {
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    document.querySelectorAll('.category-btn').forEach(b => 
+                        b.classList.remove('ring-4', 'ring-blue-500'));
+                    this.classList.add('ring-4', 'ring-blue-500');
+                    fetchPOIs(category);
+                });
+            });
+
+            document.querySelectorAll('.rating-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const rating = parseFloat(this.dataset.rating);
+                    document.querySelectorAll('.rating-btn').forEach(b => 
+                        b.classList.remove('bg-blue-500', 'text-white'));
+                    this.classList.add('bg-blue-500', 'text-white');
+                    currentRating = rating;
+                    if (currentCategory) fetchPOIs(currentCategory);
+                });
+            });
+
+            const distanceRange = document.getElementById('distanceRange');
+            const distanceValue = document.getElementById('distanceValue');
+            distanceRange.addEventListener('input', function() {
+                maxDistance = parseInt(this.value);
+                distanceValue.textContent = `${maxDistance} km`;
+                if (currentCategory) fetchPOIs(currentCategory);
+            });
+
+            document.getElementById('find-me').addEventListener('click', getUserLocation);
+        }
+
+        function getUserLocation() {
+            if (navigator.geolocation) {
+                showLoading();
+                navigator.geolocation.getCurrentPosition(
+                    position => {
+                        const { latitude, longitude } = position.coords;
+                        updateUserLocation(latitude, longitude);
+                        fetchWeather(latitude, longitude);
+                        hideLoading();
+                    },
+                    error => {
+                        console.error("Error getting location:", error);
+                        hideLoading();
+                        alert("No se pudo obtener tu ubicación. Usando ubicación predeterminada de Puno.");
+                        fetchWeather(-15.8403, -70.0217);
+                    }
+                );
+            }
+        }
+
+        function updateUserLocation(lat, lon) {
+            if (userMarker) map.removeLayer(userMarker);
+            userMarker = L.marker([lat, lon], {
+                icon: L.divIcon({
+                    html: '<i class="fas fa-user-circle fa-2x text-blue-500"></i>',
+                    className: 'custom-marker'
+                })
+            }).addTo(map);
+            map.setView([lat, lon], 14);
+        }
+
+        async function fetchPOIs(category) {
+            showLoading();
+            currentCategory = category;
+            const userLat = userMarker ? userMarker.getLatLng().lat : -15.8403;
+            const userLon = userMarker ? userMarker.getLatLng().lng : -70.0217;
+            
+            try {
+                const response = await fetch(`/pois/${category}?lat=${userLat}&lon=${userLon}&rating=${currentRating}`);
+                const routes = await response.json();
+                clearMarkers();
+                
+                // Filtrar por distancia
+                const filteredRoutes = routes.filter(route => route.distance <= maxDistance);
+                
+                displayPOIs(filteredRoutes);
+            } catch (error) {
+                console.error("Error fetching POIs:", error);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        async function fetchWeather(lat, lon) {
+            try {
+                const response = await fetch(`/weather?lat=${lat}&lon=${lon}`);
+                const data = await response.json();
+                displayWeather(data);
+            } catch (error) {
+                console.error("Error fetching weather:", error);
+            }
+        }
+
+        function displayWeather(weather) {
+            const weatherInfo = document.getElementById('weather-info');
+            weatherInfo.innerHTML = `
+                <img src="http://openweathermap.org/img/w/${weather.icon}.png" alt="Weather icon" class="w-12 h-12">
+                <div>
+                    <span class="text-2xl font-bold">${Math.round(weather.temperature)}°C</span>
+                    <span class="block text-sm capitalize">${weather.description}</span>
+                </div>
+            `;
+        }
+
+        function displayPOIs(routes) {
+            const poiList = document.getElementById('poiList');
+            poiList.innerHTML = '';
+            
+            routes.forEach((route, index) => {
+                const poi = route.poi;
+                addMarker(poi);
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-xl shadow-lg overflow-hidden card-hover animate__animated animate__fadeIn';
+                card.style.animationDelay = `${index * 100}ms`;
+                card.innerHTML = `
+                    <div class="relative pb-48 overflow-hidden">
+                        <img class="absolute inset-0 h-full w-full object-cover" src="/api/placeholder/400/300" alt="${poi.name}">
+                        <div class="absolute top-0 right-0 p-2 bg-white bg-opacity-75 rounded-bl-lg">
+                            <span class="text-sm font-semibold">${route.distance.toFixed(1)} km</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-baseline">
+                            <span class="inline-block px-2 py-1 text-xs font-semibold ${getCategoryColor(poi.type)} rounded-full uppercase tracking-wide">${getCategoryLabel(poi.type)}</span>
+                        </div>
+                        <h3 class="mt-2 text-xl font-semibold">${poi.name}</h3>
+                        <p class="mt-2 text-gray-600 text-sm">${poi.address}</p>
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                ${getStarRating(poi.rating)}
+                                <span class="ml-2 text-gray-600">${poi.rating.toFixed(1)}</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <button onclick="showRoute(${poi.location[0]}, ${poi.location[1]})" 
+                                    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors flex items-center">
+                                <i class="fas fa-route mr-2"></i>
+                                Ver Ruta
+                            </button>
+                            ${poi.phone ? `
+                                <a href="tel:${poi.phone}" class="text-gray-600 hover:text-blue-500 transition-colors">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            ` : ''}
+                            ${poi.website ? `
+                                <a href="${poi.website}" target="_blank" class="text-gray-600 hover:text-blue-500 transition-colors">
+                                    <i class="fas fa-globe"></i>
+                                </a>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+                poiList.appendChild(card);
+            });
+        }
+
+        function getStarRating(rating) {
+            const fullStars = Math.floor(rating);
+            const halfStar = rating % 1 >= 0.5;
+            let stars = '';
+            
+            for (let i = 0; i < 5; i++) {
+                if (i < fullStars) {
+                    stars += '<i class="fas fa-star text-yellow-400"></i>';
+                } else if (i === fullStars && halfStar) {
+                    stars += '<i class="fas fa-star-half-alt text-yellow-400"></i>';
+                } else {
+                    stars += '<i class="far fa-star text-yellow-400"></i>';
+                }
+            }
+            
+            return stars;
+        }
+
+        async function showRoute(endLat, endLon) {
+            if (!userMarker) {
+                alert("Por favor, activa tu ubicación primero");
+                return;
+            }
+            
+            showLoading();
+            const startLat = userMarker.getLatLng().lat;
+            const startLon = userMarker.getLatLng().lng;
+            
+            try {
+                const response = await fetch(`/directions?start_lat=${startLat}&start_lon=${startLon}&end_lat=${endLat}&end_lon=${endLon}`);
+                const data = await response.json();
+                
+                if (routeLayer) {
+                    map.removeLayer(routeLayer);
+                }
+                
+                routeLayer = L.polyline(data.route.map(coord => [coord[1], coord[0]]), {
+                    color: '#3b82f6',
+                    weight: 5,
+                    opacity: 0.7,
+                    lineJoin: 'round'
+                }).addTo(map);
+                
+                map.fitBounds(routeLayer.getBounds(), { padding: [50, 50] });
+
+                // Mostrar información de la ruta
+                showRouteInfo(data);
+            } catch (error) {
+                console.error("Error fetching route:", error);
+                alert("No se pudo obtener la ruta");
+            } finally {
+                hideLoading();
+            }
+        }
+
+        function showRouteInfo(data) {
+            const { distance, duration } = data;
+            const routeInfo = document.createElement('div');
+            routeInfo.className = 'fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-white p-4 rounded-lg shadow-lg animate__animated animate__fadeInUp';
+            routeInfo.innerHTML = `
+                <div class="flex items-center space-x-4">
+                    <div>
+                        <i class="fas fa-road text-blue-500"></i>
+                        <span class="ml-2">${distance} km</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-clock text-blue-500"></i>
+                        <span class="ml-2">${duration} min</span>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(routeInfo);
+            setTimeout(() => routeInfo.remove(), 5000);
+        }
+
+        function addMarker(poi) {
+            if (markers[poi.name]) map.removeLayer(markers[poi.name]);
+            
+            const icon = L.divIcon({
+                html: `<i class="fas fa-${getCategoryIcon(poi.type)} text-lg ${getCategoryIconColor(poi.type)}"></i>`,
+                className: 'custom-marker'
+            });
+            
+            markers[poi.name] = L.marker(poi.location, { icon })
+                .bindPopup(`
+                    <div class="text-center">
+                        <h3 class="font-semibold">${poi.name}</h3>
+                        <p class="text-sm text-gray-600">${poi.address}</p>
+                        <div class="mt-2">
+                            ${getStarRating(poi.rating)}
+                        </div>
+                    </div>
+                `)
+                .addTo(map);
+        }
+
+        function getCategoryIcon(category) {
+            switch (category) {
+                case 'hotel': return 'hotel';
+                case 'restaurant': return 'utensils';
+                case 'attraction': return 'landmark';
+                default: return 'map-marker';
+            }
+        }
+
+        function getCategoryIconColor(category) {
+            switch (category) {
+                case 'hotel': return 'text-blue-500';
+                case 'restaurant': return 'text-green-500';
+                case 'attraction': return 'text-purple-500';
+                default: return 'text-gray-500';
+            }
+        }
+
+        function getCategoryColor(category) {
+            switch (category) {
+                case 'hotel': return 'bg-blue-100 text-blue-800';
+                case 'restaurant': return 'bg-green-100 text-green-800';
+                case 'attraction': return 'bg-purple-100 text-purple-800';
+                default: return 'bg-gray-100 text-gray-800';
+            }
+        }
+
+        function getCategoryLabel(category) {
+            switch (category) {
+                case 'hotel': return 'Hotel';
+                case 'restaurant': return 'Restaurante';
+                case 'attraction': return 'Atracción';
+                default: return category;
+            }
+        }
+
+        function clearMarkers() {
+            Object.values(markers).forEach(marker => map.removeLayer(marker));
+            if (routeLayer) map.removeLayer(routeLayer);
+        }
+
+        function showLoading() {
+            document.getElementById('loading').classList.remove('hidden');
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').classList.add('hidden');
+        }
+        
+    </script>
+</body>
+</html>
