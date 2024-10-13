@@ -1,0 +1,923 @@
+2024-10-08 09:39:18,936 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-08 09:39:18,974 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+2024-10-08 09:39:18,982 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-08 09:39:38,522 - __main__ - ERROR - Error al renderizar index.html: index.html
+2024-10-08 09:39:38,530 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:39:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-08 09:40:36,381 - __main__ - ERROR - Error al renderizar index.html: index.html
+2024-10-08 09:40:36,381 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:40:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-08 09:42:41,201 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:42:41] "GET / HTTP/1.1" 200 -
+2024-10-08 09:42:41,672 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:42:41] "[35m[1mGET /weather?lat=-15.480371986750159&lon=-70.10543824042372 HTTP/1.1[0m" 503 -
+2024-10-08 09:42:49,625 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:42:49] "GET /pois/hotel?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:43:17,001 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:43:17] "GET /pois/restaurant?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:43:22,987 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:43:22] "GET /pois/attraction?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:43:37,910 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:43:37] "GET /pois/attraction?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:43:58,284 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:43:58] "GET / HTTP/1.1" 200 -
+2024-10-08 09:43:58,526 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:43:58] "[35m[1mGET /weather?lat=-15.480371986750159&lon=-70.10543824042372 HTTP/1.1[0m" 503 -
+2024-10-08 09:44:00,370 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:44:00] "GET / HTTP/1.1" 200 -
+2024-10-08 09:44:00,647 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:44:00] "[35m[1mGET /weather?lat=-15.480371986750159&lon=-70.10543824042372 HTTP/1.1[0m" 503 -
+2024-10-08 09:44:19,454 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:44:19] "GET / HTTP/1.1" 200 -
+2024-10-08 09:44:19,674 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:44:19] "[35m[1mGET /weather?lat=-15.480371986750159&lon=-70.10543824042372 HTTP/1.1[0m" 503 -
+2024-10-08 09:44:35,842 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:44:35] "GET /pois/hotel?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:44:37,731 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:44:37] "GET /pois/restaurant?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:46:14,755 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:46:14] "GET / HTTP/1.1" 200 -
+2024-10-08 09:46:15,138 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:46:15] "[35m[1mGET /weather?lat=-15.480371986750159&lon=-70.10543824042372 HTTP/1.1[0m" 503 -
+2024-10-08 09:46:21,325 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:46:21] "GET /pois/hotel?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:46:54,939 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:46:54] "GET /directions?start_lat=-15.480371986750159&start_lon=-70.10543824042372&end_lat=-15.4858949&end_lon=-70.1232141 HTTP/1.1" 200 -
+2024-10-08 09:46:55,659 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:46:55] "GET /directions?start_lat=-15.480371986750159&start_lon=-70.10543824042372&end_lat=-15.4858949&end_lon=-70.1232141 HTTP/1.1" 200 -
+2024-10-08 09:47:06,808 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:47:06] "GET /pois/hotel?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:47:08,393 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:47:08] "GET /pois/restaurant?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:47:10,014 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:47:10] "GET /pois/attraction?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:47:12,422 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:47:12] "GET / HTTP/1.1" 200 -
+2024-10-08 09:47:12,696 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:47:12] "[35m[1mGET /weather?lat=-15.480371986750159&lon=-70.10543824042372 HTTP/1.1[0m" 503 -
+2024-10-08 09:47:14,960 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:47:14] "GET /pois/hotel?lat=-15.480371986750159&lon=-70.10543824042372&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:47:19,407 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:47:19] "GET /directions?start_lat=-15.480371986750159&start_lon=-70.10543824042372&end_lat=-15.4858949&end_lon=-70.1232141 HTTP/1.1" 200 -
+2024-10-08 09:47:25,063 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:47:25] "GET /directions?start_lat=-15.480371986750159&start_lon=-70.10543824042372&end_lat=-15.4866151&end_lon=-70.1242242 HTTP/1.1" 200 -
+2024-10-08 09:52:13,651 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:52:13] "GET / HTTP/1.1" 200 -
+2024-10-08 09:52:17,691 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:52:17] "GET / HTTP/1.1" 200 -
+2024-10-08 09:52:18,168 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:52:18] "[35m[1mGET /weather?lat=-15.480525419745325&lon=-70.10568334827286 HTTP/1.1[0m" 503 -
+2024-10-08 09:52:56,602 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-08 09:52:56,625 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+2024-10-08 09:52:56,625 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-08 09:53:02,495 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:02] "GET / HTTP/1.1" 200 -
+2024-10-08 09:53:02,654 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:02] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-08 09:53:07,157 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:07] "[35m[1mGET /weather?lat=-15.480582933416345&lon=-70.10585067830064 HTTP/1.1[0m" 503 -
+2024-10-08 09:53:12,820 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:12] "[35m[1mGET /weather?lat=-15.480582933416345&lon=-70.10585067830064 HTTP/1.1[0m" 503 -
+2024-10-08 09:53:17,388 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:17] "GET /pois/hotel?lat=-15.480582933416345&lon=-70.10585067830064&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:53:17,404 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:17] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 09:53:36,747 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:36] "GET /directions?start_lat=-15.480582933416345&start_lon=-70.10585067830064&end_lat=-15.4858949&end_lon=-70.1232141 HTTP/1.1" 200 -
+2024-10-08 09:53:52,752 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:52] "GET /pois/hotel?lat=-15.480582933416345&lon=-70.10585067830064&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:53:52,767 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:52] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 09:53:55,652 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:55] "GET /pois/restaurant?lat=-15.480582933416345&lon=-70.10585067830064&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:53:55,668 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:55] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 09:53:58,947 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:58] "GET / HTTP/1.1" 200 -
+2024-10-08 09:53:58,965 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:58] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-08 09:53:59,292 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:53:59] "[35m[1mGET /weather?lat=-15.480582933416345&lon=-70.10585067830064 HTTP/1.1[0m" 503 -
+2024-10-08 09:54:10,655 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:54:10] "GET /pois/attraction?lat=-15.480582933416345&lon=-70.10585067830064&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:54:15,831 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:54:15] "GET /pois/attraction?lat=-15.480582933416345&lon=-70.10585067830064&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:54:15,846 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:54:15] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 09:54:17,743 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:54:17] "GET /pois/attraction?lat=-15.480582933416345&lon=-70.10585067830064&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:54:17,758 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:54:17] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 09:54:56,308 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:54:56] "GET /directions?start_lat=-15.480582933416345&start_lon=-70.10585067830064&end_lat=-15.492271025&end_lon=-70.136364775 HTTP/1.1" 200 -
+2024-10-08 09:55:29,879 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:55:29] "GET / HTTP/1.1" 200 -
+2024-10-08 09:55:29,904 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:55:29] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-08 09:55:30,179 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:55:30] "[35m[1mGET /weather?lat=-15.480582933416345&lon=-70.10585067830064 HTTP/1.1[0m" 503 -
+2024-10-08 09:55:36,218 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:55:36] "GET /pois/hotel?lat=-15.480582933416345&lon=-70.10585067830064&rating=0 HTTP/1.1" 200 -
+2024-10-08 09:55:36,234 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:55:36] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 09:55:41,560 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:55:41] "GET /directions?start_lat=-15.480582933416345&start_lon=-70.10585067830064&end_lat=-15.4858949&end_lon=-70.1232141 HTTP/1.1" 200 -
+2024-10-08 09:59:47,608 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-08 09:59:47,633 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+2024-10-08 09:59:47,633 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-08 09:59:55,584 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:59:55] "GET / HTTP/1.1" 200 -
+2024-10-08 09:59:55,708 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:59:55] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-08 09:59:56,210 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 09:59:56] "[35m[1mGET /weather?lat=-15.480451508479986&lon=-70.10555121880363 HTTP/1.1[0m" 503 -
+2024-10-08 10:00:10,158 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:00:10] "[35m[1mGET /weather?lat=-15.480614141201073&lon=-70.10576148524085 HTTP/1.1[0m" 503 -
+2024-10-08 10:00:24,523 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:00:24] "GET /pois/attraction?lat=-15.480614141201073&lon=-70.10576148524085&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:00:24,539 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:00:24] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:00:36,070 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:00:36] "GET /directions?start_lat=-15.480614141201073&start_lon=-70.10576148524085&end_lat=-15.5018271&end_lon=-70.1393804 HTTP/1.1" 200 -
+2024-10-08 10:00:43,532 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:00:43] "GET /directions?start_lat=-15.480614141201073&start_lon=-70.10576148524085&end_lat=-15.5018271&end_lon=-70.1393804 HTTP/1.1" 200 -
+2024-10-08 10:00:50,084 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:00:50] "GET /directions?start_lat=-15.480614141201073&start_lon=-70.10576148524085&end_lat=-15.493656975&end_lon=-70.135987375 HTTP/1.1" 200 -
+2024-10-08 10:00:59,683 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:00:59] "GET /pois/attraction?lat=-15.480614141201073&lon=-70.10576148524085&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:00:59,698 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:00:59] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:01:10,435 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:01:10] "GET /pois/restaurant?lat=-15.480614141201073&lon=-70.10576148524085&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:01:10,450 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:01:10] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:01:56,580 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:01:56] "[35m[1mGET /weather?lat=-15.480527561579734&lon=-70.10570362017047 HTTP/1.1[0m" 503 -
+2024-10-08 10:04:15,618 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:15] "[35m[1mGET /weather?lat=-15.480525934571176&lon=-70.10568235685173 HTTP/1.1[0m" 503 -
+2024-10-08 10:04:24,763 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:24] "GET /pois/hotel?lat=-15.480525934571176&lon=-70.10568235685173&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:04:24,795 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:24] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:04:26,271 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:26] "GET /pois/attraction?lat=-15.480525934571176&lon=-70.10568235685173&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:04:26,298 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:26] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:04:31,085 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:31] "GET /pois/attraction?lat=-15.480525934571176&lon=-70.10568235685173&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:04:31,111 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:31] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:04:32,220 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:32] "GET /pois/attraction?lat=-15.480525934571176&lon=-70.10568235685173&rating=3 HTTP/1.1" 200 -
+2024-10-08 10:04:32,255 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:32] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:04:33,479 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:33] "GET /pois/attraction?lat=-15.480525934571176&lon=-70.10568235685173&rating=4 HTTP/1.1" 200 -
+2024-10-08 10:04:33,502 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:33] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:04:38,129 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:38] "GET /directions?start_lat=-15.480525934571176&start_lon=-70.10568235685173&end_lat=-15.492271025&end_lon=-70.136364775 HTTP/1.1" 200 -
+2024-10-08 10:04:58,739 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:58] "GET / HTTP/1.1" 200 -
+2024-10-08 10:04:58,763 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:58] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-08 10:04:59,032 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:04:59] "[35m[1mGET /weather?lat=-15.480525934571176&lon=-70.10568235685173 HTTP/1.1[0m" 503 -
+2024-10-08 10:10:09,681 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:10:09] "[35m[1mGET /weather?lat=-15.48043754361519&lon=-70.10547529231707 HTTP/1.1[0m" 503 -
+2024-10-08 10:10:20,602 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:10:20] "GET /pois/hotel?lat=-15.48043754361519&lon=-70.10547529231707&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:10:20,631 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:10:20] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:10:22,222 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:10:22] "GET /pois/restaurant?lat=-15.48043754361519&lon=-70.10547529231707&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:10:22,238 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:10:22] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:11:04,387 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:11:04] "GET /pois/restaurant?lat=-15.48043754361519&lon=-70.10547529231707&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:11:04,402 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:11:04] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:11:06,059 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:11:06] "GET /pois/restaurant?lat=-15.48043754361519&lon=-70.10547529231707&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:11:09,040 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:11:09] "GET /pois/restaurant?lat=-15.48043754361519&lon=-70.10547529231707&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:11:09,071 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:11:09] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:11:22,124 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:11:22] "GET /pois/restaurant?lat=-15.48043754361519&lon=-70.10547529231707&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:11:22,139 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:11:22] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-08 10:11:30,316 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:11:30] "GET /pois/restaurant?lat=-15.48043754361519&lon=-70.10547529231707&rating=0 HTTP/1.1" 200 -
+2024-10-08 10:11:30,347 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2024 10:11:30] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:01:20,092 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 19:01:20,125 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 19:01:20,127 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:01:25,512 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:01:25] "GET / HTTP/1.1" 200 -
+2024-10-10 19:01:25,744 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:01:25] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:01:26,343 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:01:26] "[35m[1mGET /weather?lat=-15.82724751630302&lon=-70.01736485165156 HTTP/1.1[0m" 503 -
+2024-10-10 19:01:32,710 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:01:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 19:01:45,681 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:01:45] "[35m[1mGET /weather?lat=-15.82724751630302&lon=-70.01736485165156 HTTP/1.1[0m" 503 -
+2024-10-10 19:02:04,085 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:02:04] "GET /pois/restaurant?lat=-15.82724751630302&lon=-70.01736485165156&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:02:04,210 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:02:04] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:02:18,390 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:02:18] "GET /pois/restaurant?lat=-15.82724751630302&lon=-70.01736485165156&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:02:18,436 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:02:18] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:02:23,050 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:02:23] "GET /pois/restaurant?lat=-15.82724751630302&lon=-70.01736485165156&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:02:23,081 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:02:23] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:02:46,219 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:02:46] "GET /directions?start_lat=-15.82724751630302&start_lon=-70.01736485165156&end_lat=-15.8311053&end_lon=-70.0210662 HTTP/1.1" 200 -
+2024-10-10 19:03:06,592 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:03:06] "GET /directions?start_lat=-15.82724751630302&start_lon=-70.01736485165156&end_lat=-15.8311053&end_lon=-70.0210662 HTTP/1.1" 200 -
+2024-10-10 19:03:19,414 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:03:19] "GET /pois/attraction?lat=-15.82724751630302&lon=-70.01736485165156&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:03:24,315 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:03:24] "GET / HTTP/1.1" 200 -
+2024-10-10 19:03:24,330 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:03:24] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:03:24,552 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:03:24] "[35m[1mGET /weather?lat=-15.82724751630302&lon=-70.01736485165156 HTTP/1.1[0m" 503 -
+2024-10-10 19:16:07,190 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 19:16:07,214 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 19:16:07,214 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:16:12,308 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:16:12] "GET / HTTP/1.1" 200 -
+2024-10-10 19:16:12,517 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:16:12] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:16:12,906 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:16:12] "[35m[1mGET /weather?lat=-15.827265934561813&lon=-70.01738669101526 HTTP/1.1[0m" 503 -
+2024-10-10 19:16:13,723 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:16:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 19:16:22,229 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:16:22] "GET /pois/restaurant?lat=-15.827265934561813&lon=-70.01738669101526&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:16:22,290 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:16:22] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:16:27,845 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:16:27] "GET /directions?start_lat=-15.827265934561813&start_lon=-70.01738669101526&end_lat=-15.8311026&end_lon=-70.0210602 HTTP/1.1" 200 -
+2024-10-10 19:18:10,804 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 19:18:10,819 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 19:18:10,819 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:18:27,445 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:18:27] "GET / HTTP/1.1" 200 -
+2024-10-10 19:18:27,688 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:18:27] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:18:28,077 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:18:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 19:18:32,137 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:18:32] "[35m[1mGET /weather?lat=-15.827276564062807&lon=-70.0173576582128 HTTP/1.1[0m" 503 -
+2024-10-10 19:18:38,188 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:18:38] "GET /pois/hotel?lat=-15.827276564062807&lon=-70.0173576582128&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:18:38,234 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:18:38] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:18:42,521 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:18:42] "GET /pois/attraction?lat=-15.827276564062807&lon=-70.0173576582128&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:18:42,567 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:18:42] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:18:50,576 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:18:50] "GET /directions?start_lat=-15.827276564062807&start_lon=-70.0173576582128&end_lat=-15.8202693&end_lon=-70.0287285 HTTP/1.1" 200 -
+2024-10-10 19:19:26,201 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:19:26] "GET / HTTP/1.1" 200 -
+2024-10-10 19:19:26,228 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:19:26] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:19:26,449 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:19:26] "[35m[1mGET /weather?lat=-15.827276564062807&lon=-70.0173576582128 HTTP/1.1[0m" 503 -
+2024-10-10 19:19:30,586 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:19:30] "GET /pois/restaurant?lat=-15.827276564062807&lon=-70.0173576582128&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:19:30,648 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:19:30] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:19:31,536 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:19:31] "GET /pois/attraction?lat=-15.827276564062807&lon=-70.0173576582128&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:19:31,559 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:19:31] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:19:40,748 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:19:40] "GET /directions?start_lat=-15.827276564062807&start_lon=-70.0173576582128&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 19:20:17,891 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 19:20:17,911 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 19:20:17,911 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:20:24,318 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:20:24] "GET / HTTP/1.1" 200 -
+2024-10-10 19:20:24,555 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:20:24] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:20:24,944 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:20:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 19:20:28,311 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:20:28] "[35m[1mGET /weather?lat=-15.827287403554207&lon=-70.01735860238598 HTTP/1.1[0m" 503 -
+2024-10-10 19:20:33,361 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:20:33] "GET /pois/attraction?lat=-15.827287403554207&lon=-70.01735860238598&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:20:33,376 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:20:33] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:20:42,195 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:20:42] "GET /directions?start_lat=-15.827287403554207&start_lon=-70.01735860238598&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 19:21:21,546 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:21:21] "GET / HTTP/1.1" 200 -
+2024-10-10 19:21:21,563 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:21:21] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:21:21,793 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:21:21] "[35m[1mGET /weather?lat=-15.827287403554207&lon=-70.01735860238598 HTTP/1.1[0m" 503 -
+2024-10-10 19:21:28,326 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:21:28] "GET /pois/restaurant?lat=-15.827287403554207&lon=-70.01735860238598&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:21:28,389 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:21:28] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:21:35,735 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:21:35] "GET /directions?start_lat=-15.827287403554207&start_lon=-70.01735860238598&end_lat=-15.8311026&end_lon=-70.0210602 HTTP/1.1" 200 -
+2024-10-10 19:22:00,716 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 19:22:00,734 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 19:22:00,734 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:22:09,767 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:09] "GET / HTTP/1.1" 200 -
+2024-10-10 19:22:10,108 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:10] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:22:10,497 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 19:22:14,626 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:14] "[35m[1mGET /weather?lat=-15.827249179533238&lon=-70.01737022357754 HTTP/1.1[0m" 503 -
+2024-10-10 19:22:32,997 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:32] "GET / HTTP/1.1" 200 -
+2024-10-10 19:22:33,078 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:33] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:22:33,214 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:33] "[35m[1mGET /weather?lat=-15.827249179533238&lon=-70.01737022357754 HTTP/1.1[0m" 503 -
+2024-10-10 19:22:48,774 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:48] "GET / HTTP/1.1" 200 -
+2024-10-10 19:22:48,936 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:48] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:22:49,150 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:22:49] "[35m[1mGET /weather?lat=-15.827249179533238&lon=-70.01737022357754 HTTP/1.1[0m" 503 -
+2024-10-10 19:23:43,875 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 19:23:43,891 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 19:23:43,891 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:32:27,977 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 19:32:27,995 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 19:32:27,995 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:38:19,484 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 19:38:19,500 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 19:38:19,500 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:39:02,255 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:39:02] "GET / HTTP/1.1" 200 -
+2024-10-10 19:39:02,513 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:39:02] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:39:02,854 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:39:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 19:39:06,919 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:39:06] "[35m[1mGET /weather?lat=-15.827284640075568&lon=-70.01736109884362 HTTP/1.1[0m" 503 -
+2024-10-10 19:39:14,486 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:39:14] "GET /pois/attraction?lat=-15.827284640075568&lon=-70.01736109884362&rating=0 HTTP/1.1" 200 -
+2024-10-10 19:39:14,502 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:39:14] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 19:39:25,987 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:39:25] "GET /directions?start_lat=-15.827284640075568&start_lon=-70.01736109884362&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 19:59:18,654 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 19:59:18,676 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 19:59:18,676 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 19:59:22,205 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:59:22] "GET / HTTP/1.1" 200 -
+2024-10-10 19:59:22,294 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:59:22] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 19:59:24,743 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:59:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 19:59:27,219 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:59:27] "[35m[1mGET /weather?lat=-6.7817306&lon=-79.8408787 HTTP/1.1[0m" 503 -
+2024-10-10 19:59:44,051 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:59:44] "[35m[1mGET /weather?lat=-6.7817306&lon=-79.8408787 HTTP/1.1[0m" 503 -
+2024-10-10 19:59:45,159 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:59:45] "[35m[1mGET /weather?lat=-6.7817306&lon=-79.8408787 HTTP/1.1[0m" 503 -
+2024-10-10 19:59:46,091 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:59:46] "[35m[1mGET /weather?lat=-6.7817306&lon=-79.8408787 HTTP/1.1[0m" 503 -
+2024-10-10 19:59:53,536 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:59:53] "[35m[1mGET /weather?lat=-6.7817306&lon=-79.8408787 HTTP/1.1[0m" 503 -
+2024-10-10 19:59:59,782 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 19:59:59] "GET /pois/attraction?lat=-6.7817306&lon=-79.8408787&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:00:04,082 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:04] "GET /pois/attraction?lat=-6.7817306&lon=-79.8408787&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:00:14,761 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:14] "GET / HTTP/1.1" 200 -
+2024-10-10 20:00:14,788 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:14] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:00:17,712 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:17] "GET /pois/restaurant?lat=-6.7817306&lon=-79.8408787&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:00:19,104 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:19] "[35m[1mGET /weather?lat=-15.827203263669432&lon=-70.01736769795362 HTTP/1.1[0m" 503 -
+2024-10-10 20:00:23,254 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:23] "GET /pois/restaurant?lat=-15.827203263669432&lon=-70.01736769795362&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:00:23,301 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:23] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:00:28,532 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:28] "GET /directions?start_lat=-15.827203263669432&start_lon=-70.01736769795362&end_lat=-15.8311026&end_lon=-70.0210602 HTTP/1.1" 200 -
+2024-10-10 20:00:50,448 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:50] "GET / HTTP/1.1" 200 -
+2024-10-10 20:00:50,505 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:50] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:00:51,009 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:51] "[35m[1mGET /weather?lat=-15.8276952&lon=-70.0173692 HTTP/1.1[0m" 503 -
+2024-10-10 20:00:58,159 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:58] "GET /pois/attraction?lat=-15.8276952&lon=-70.0173692&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:00:58,207 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:58] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:00:58,750 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:58] "GET /pois/attraction?lat=-15.8276952&lon=-70.0173692&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:00:58,764 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:00:58] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:01:05,739 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:01:05] "GET /directions?start_lat=-15.8276952&start_lon=-70.0173692&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 20:08:15,604 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:08:15,620 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:08:15,620 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:08:21,086 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:08:21] "GET / HTTP/1.1" 200 -
+2024-10-10 20:08:21,297 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:08:21] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:08:56,899 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:08:56] "GET / HTTP/1.1" 200 -
+2024-10-10 20:08:56,925 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:08:56] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:09:26,116 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:09:26,121 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:09:26,133 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:09:37,666 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:09:37] "GET / HTTP/1.1" 200 -
+2024-10-10 20:09:37,961 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:09:37] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:09:38,568 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:09:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 20:09:38,692 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:09:38] "[35m[1mGET /weather?lat=-15.827258199906368&lon=-70.01735947930092 HTTP/1.1[0m" 503 -
+2024-10-10 20:09:47,505 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:09:47] "GET /pois/attraction?lat=-15.827258199906368&lon=-70.01735947930092&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:09:47,521 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:09:47] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:09:57,037 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:09:57] "GET /directions?start_lat=-15.827258199906368&start_lon=-70.01735947930092&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 20:16:03,750 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:16:03,781 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:16:03,781 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:16:08,795 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:08] "GET / HTTP/1.1" 200 -
+2024-10-10 20:16:09,049 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:09] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:16:09,469 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 20:16:09,686 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:09] "[35m[1mGET /weather?lat=-15.827258199906368&lon=-70.01735947930092 HTTP/1.1[0m" 503 -
+2024-10-10 20:16:16,222 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:16] "GET /pois/hotel?lat=-15.827258199906368&lon=-70.01735947930092&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:16:16,266 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:16] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:16:23,890 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:23] "GET /directions?start_lat=-15.827258199906368&start_lon=-70.01735947930092&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 20:16:29,787 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:29] "GET /pois/restaurant?lat=-15.827258199906368&lon=-70.01735947930092&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:16:29,834 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:29] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:16:33,060 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:33] "GET /pois/hotel?lat=-15.827258199906368&lon=-70.01735947930092&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:16:33,107 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:33] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:16:35,775 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:35] "GET /pois/attraction?lat=-15.827258199906368&lon=-70.01735947930092&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:16:35,790 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:35] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:16:40,932 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:40] "GET /pois/hotel?lat=-15.827258199906368&lon=-70.01735947930092&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:16:40,979 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:40] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:16:47,447 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:47] "[35m[1mGET /weather?lat=-15.827247846464763&lon=-70.01736248192165 HTTP/1.1[0m" 503 -
+2024-10-10 20:16:57,260 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:57] "GET /pois/restaurant?lat=-15.827247846464763&lon=-70.01736248192165&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:16:57,303 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:16:57] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:17:03,687 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:17:03] "GET /pois/hotel?lat=-15.827247846464763&lon=-70.01736248192165&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:17:03,720 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:17:03] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:19:48,885 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:19:48,901 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:19:48,901 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:19:54,683 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:19:54] "GET / HTTP/1.1" 200 -
+2024-10-10 20:19:54,788 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:19:54] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:19:59,276 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:19:59] "[35m[1mGET /weather?lat=-15.827238707349656&lon=-70.01736818445846 HTTP/1.1[0m" 503 -
+2024-10-10 20:20:07,093 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:20:07] "GET /pois/attraction?lat=-15.827238707349656&lon=-70.01736818445846&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:20:07,108 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:20:07] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:20:21,255 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:20:21] "GET /directions?start_lat=-15.827238707349656&start_lon=-70.01736818445846&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 20:20:41,069 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:20:41] "GET / HTTP/1.1" 200 -
+2024-10-10 20:20:41,108 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:20:41] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:21:04,015 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:21:04,040 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:21:04,040 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:21:08,552 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:21:08] "GET / HTTP/1.1" 200 -
+2024-10-10 20:21:08,787 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:21:08] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:21:09,134 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:21:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 20:21:09,202 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:21:09] "[35m[1mGET /weather?lat=-15.827226882408164&lon=-70.01737158722065 HTTP/1.1[0m" 503 -
+2024-10-10 20:21:11,822 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:21:11] "GET /pois/hotel?lat=-15.827226882408164&lon=-70.01737158722065&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:21:11,870 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:21:11] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:21:18,172 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:21:18] "GET /directions?start_lat=-15.827226882408164&start_lon=-70.01737158722065&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 20:22:13,417 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:22:13,448 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:22:13,448 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:22:18,806 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:22:18] "GET / HTTP/1.1" 200 -
+2024-10-10 20:22:19,033 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:22:19] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:22:19,405 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:22:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 20:22:19,450 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:22:19] "[35m[1mGET /weather?lat=-15.827226882408164&lon=-70.01737158722065 HTTP/1.1[0m" 503 -
+2024-10-10 20:22:24,815 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:22:24] "GET /pois/hotel?lat=-15.827226882408164&lon=-70.01737158722065&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:22:24,846 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:22:24] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:22:29,242 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:22:29] "GET /directions?start_lat=-15.827226882408164&start_lon=-70.01737158722065&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 20:30:57,441 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:30:57] "GET /directions?start_lat=-15.8276952&start_lon=-70.0173692&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 20:31:03,487 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:31:03] "GET /directions?start_lat=-15.8276952&start_lon=-70.0173692&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 20:34:47,111 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:34:47,127 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:34:47,127 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:34:51,564 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:34:51] "GET / HTTP/1.1" 200 -
+2024-10-10 20:34:51,798 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:34:51] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:34:52,182 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:34:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 20:34:52,193 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:34:52] "[35m[1mGET /weather?lat=-15.827226882408164&lon=-70.01737158722065 HTTP/1.1[0m" 503 -
+2024-10-10 20:35:08,393 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:35:08] "GET /pois/hotel?lat=-15.827226882408164&lon=-70.01737158722065&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:35:08,440 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:35:08] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:35:13,124 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:35:13] "GET /directions?start_lat=-15.827226882408164&start_lon=-70.01737158722065&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 20:39:46,356 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:39:46,388 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:39:46,388 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:39:51,457 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:39:51] "GET / HTTP/1.1" 200 -
+2024-10-10 20:39:51,829 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:39:51] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:39:52,506 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:39:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 20:39:52,541 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:39:52] "[35m[1mGET /weather?lat=-15.827226882408164&lon=-70.01737158722065 HTTP/1.1[0m" 503 -
+2024-10-10 20:39:56,792 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:39:56] "GET /pois/hotel?lat=-15.827226882408164&lon=-70.01737158722065&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:39:56,824 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:39:56] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:40:00,760 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:40:00] "GET /directions?start_lat=-15.827226882408164&start_lon=-70.01737158722065&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 20:48:12,375 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:48:12,408 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:48:12,416 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:48:17,169 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:17] "GET / HTTP/1.1" 200 -
+2024-10-10 20:48:17,379 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:17] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:48:22,366 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:22] "[35m[1mGET /weather?lat=-15.827228125014669&lon=-70.01736987851669 HTTP/1.1[0m" 503 -
+2024-10-10 20:48:26,175 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:26] "GET /pois/hotel?lat=-15.827228125014669&lon=-70.01736987851669&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:48:26,222 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:26] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:48:34,074 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:34] "GET /directions?start_lat=-15.827228125014669&start_lon=-70.01736987851669&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 20:48:40,533 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:40] "GET /pois/attraction?lat=-15.827228125014669&lon=-70.01736987851669&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:48:40,564 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:40] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:48:43,138 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:43] "GET /pois/attraction?lat=-15.827228125014669&lon=-70.01736987851669&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:48:43,147 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:43] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:48:43,798 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:43] "GET /pois/attraction?lat=-15.827228125014669&lon=-70.01736987851669&rating=3 HTTP/1.1" 200 -
+2024-10-10 20:48:43,814 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:43] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:48:44,356 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:44] "GET /pois/attraction?lat=-15.827228125014669&lon=-70.01736987851669&rating=4 HTTP/1.1" 200 -
+2024-10-10 20:48:44,371 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:48:44] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:49:30,719 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 20:49:30,745 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 20:49:30,745 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 20:49:35,521 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:49:35] "GET / HTTP/1.1" 200 -
+2024-10-10 20:49:35,843 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:49:35] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 20:49:36,362 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:49:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 20:49:40,464 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:49:40] "[35m[1mGET /weather?lat=-15.827237348376098&lon=-70.01736464728319 HTTP/1.1[0m" 503 -
+2024-10-10 20:49:49,706 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:49:49] "GET /pois/restaurant?lat=-15.827237348376098&lon=-70.01736464728319&rating=0 HTTP/1.1" 200 -
+2024-10-10 20:49:49,769 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:49:49] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 20:50:06,218 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 20:50:06] "GET /directions?start_lat=-15.827237348376098&start_lon=-70.01736464728319&end_lat=-15.8311026&end_lon=-70.0210602 HTTP/1.1" 200 -
+2024-10-10 21:08:34,263 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:08:34,295 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:08:34,295 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:09:49,914 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:09:49] "GET / HTTP/1.1" 200 -
+2024-10-10 21:09:50,178 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:09:50] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:09:50,637 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:09:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 21:09:54,714 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:09:54] "[35m[1mGET /weather?lat=-15.82720171140738&lon=-70.0173746770822 HTTP/1.1[0m" 503 -
+2024-10-10 21:09:59,878 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:09:59] "GET /pois/restaurant?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:09:59,941 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:09:59] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:10:07,340 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:10:07] "GET /directions?start_lat=-15.82720171140738&start_lon=-70.0173746770822&end_lat=-15.8311026&end_lon=-70.0210602 HTTP/1.1" 200 -
+2024-10-10 21:18:28,797 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:18:28,807 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:18:28,808 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:18:33,431 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:18:33] "GET / HTTP/1.1" 200 -
+2024-10-10 21:18:33,569 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:18:33] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:18:33,862 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:18:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 21:18:33,893 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:18:33] "[35m[1mGET /weather?lat=-15.82720171140738&lon=-70.0173746770822 HTTP/1.1[0m" 503 -
+2024-10-10 21:18:38,723 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:18:38] "GET /pois/hotel?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:18:38,739 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:18:38] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:18:48,424 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:18:48] "GET /directions?start_lat=-15.82720171140738&start_lon=-70.0173746770822&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 21:19:08,571 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:19:08] "GET /pois/hotel?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:19:08,602 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:19:08] "GET /pois/hotel?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:19:08,608 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:19:08] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:19:08,652 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:19:08] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:19:13,903 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:19:13] "GET /pois/restaurant?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:19:13,919 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:19:13] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:20:02,529 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:20:02] "GET /pois/attraction?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:20:02,529 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:20:02] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:20:12,845 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:20:12] "GET /pois/attraction?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:20:12,845 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:20:12] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:20:13,545 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:20:13] "GET /pois/attraction?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:20:13,545 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:20:13] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:20:41,808 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:20:41] "GET /directions?start_lat=-15.82720171140738&start_lon=-70.0173746770822&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 21:21:18,686 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:21:18] "[35m[1mGET /weather?lat=-15.82720171140738&lon=-70.0173746770822 HTTP/1.1[0m" 503 -
+2024-10-10 21:21:19,935 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:21:19] "GET / HTTP/1.1" 200 -
+2024-10-10 21:21:19,946 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:21:19] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:21:20,038 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:21:20] "[35m[1mGET /weather?lat=-15.82720171140738&lon=-70.0173746770822 HTTP/1.1[0m" 503 -
+2024-10-10 21:21:24,990 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:21:24] "GET /pois/hotel?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:21:25,008 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:21:25] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:21:34,351 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:21:34] "GET /directions?start_lat=-15.82720171140738&start_lon=-70.0173746770822&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 21:22:58,239 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:22:58] "GET /pois/hotel?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:22:58,239 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:22:58] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:23:06,621 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:23:06] "GET /pois/hotel?lat=-15.82720171140738&lon=-70.0173746770822&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:23:06,637 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:23:06] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:24:34,658 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:24:34,684 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:24:34,684 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:24:40,222 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:24:40] "GET / HTTP/1.1" 200 -
+2024-10-10 21:24:40,286 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:24:40] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:25:12,886 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:25:12] "[35m[1mGET /weather?lat=-15.82724442505235&lon=-70.01736411126583 HTTP/1.1[0m" 503 -
+2024-10-10 21:25:28,800 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:25:28] "GET /pois/hotel?lat=-15.82724442505235&lon=-70.01736411126583&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:25:28,818 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:25:28] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:25:33,984 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:25:33] "GET /pois/hotel?lat=-15.82724442505235&lon=-70.01736411126583&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:25:33,999 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:25:33] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:25:37,517 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:25:37] "GET /pois/attraction?lat=-15.82724442505235&lon=-70.01736411126583&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:25:37,517 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:25:37] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:26:01,313 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:26:01] "GET /directions?start_lat=-15.82724442505235&start_lon=-70.01736411126583&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 21:26:25,329 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:26:25] "GET / HTTP/1.1" 200 -
+2024-10-10 21:26:25,342 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:26:25] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:26:25,493 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:26:25] "[35m[1mGET /weather?lat=-15.827208196685548&lon=-70.01737252610799 HTTP/1.1[0m" 503 -
+2024-10-10 21:26:32,578 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:26:32] "GET /pois/attraction?lat=-15.827208196685548&lon=-70.01737252610799&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:26:32,584 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:26:32] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:26:39,308 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:26:39] "GET /directions?start_lat=-15.827208196685548&start_lon=-70.01737252610799&end_lat=-15.8202693&end_lon=-70.0287285 HTTP/1.1" 200 -
+2024-10-10 21:26:56,280 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:26:56] "GET / HTTP/1.1" 200 -
+2024-10-10 21:26:56,289 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:26:56] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:27:00,338 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:27:00] "[35m[1mGET /weather?lat=-15.827257113370095&lon=-70.01736622766494 HTTP/1.1[0m" 503 -
+2024-10-10 21:27:01,987 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:27:01] "GET /pois/attraction?lat=-15.827257113370095&lon=-70.01736622766494&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:27:01,995 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:27:01] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:27:08,416 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:27:08] "GET /directions?start_lat=-15.827257113370095&start_lon=-70.01736622766494&end_lat=-15.8202693&end_lon=-70.0287285 HTTP/1.1" 200 -
+2024-10-10 21:28:08,820 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:28:08] "[35m[1mGET /weather?lat=-15.827257113370095&lon=-70.01736622766494 HTTP/1.1[0m" 503 -
+2024-10-10 21:28:35,705 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:28:35,721 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:28:35,721 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:28:39,124 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:28:39] "GET / HTTP/1.1" 200 -
+2024-10-10 21:28:39,243 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:28:39] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:28:39,452 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:28:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 21:28:43,434 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:28:43] "[35m[1mGET /weather?lat=-15.827321196708237&lon=-70.01735006499634 HTTP/1.1[0m" 503 -
+2024-10-10 21:28:53,577 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:28:53] "GET / HTTP/1.1" 200 -
+2024-10-10 21:28:53,585 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:28:53] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:28:53,692 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:28:53] "[35m[1mGET /weather?lat=-15.827321196708237&lon=-70.01735006499634 HTTP/1.1[0m" 503 -
+2024-10-10 21:29:13,842 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:29:13] "GET / HTTP/1.1" 200 -
+2024-10-10 21:29:13,908 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:29:13] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:29:14,408 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:29:14] "[35m[1mGET /weather?lat=-15.8276906&lon=-70.0173569 HTTP/1.1[0m" 503 -
+2024-10-10 21:29:16,529 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:29:16] "[35m[1mGET /weather?lat=-15.8276906&lon=-70.0173569 HTTP/1.1[0m" 503 -
+2024-10-10 21:29:50,044 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:29:50] "GET /pois/restaurant?lat=-15.8276906&lon=-70.0173569&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:29:50,100 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:29:50] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:30:03,573 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:03] "GET /pois/restaurant?lat=-15.8276906&lon=-70.0173569&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:30:03,613 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:03] "GET /pois/restaurant?lat=-15.8276906&lon=-70.0173569&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:30:03,613 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:03] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:30:03,699 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:03] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:30:07,800 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:07] "GET /pois/restaurant?lat=-15.8276906&lon=-70.0173569&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:30:07,828 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:07] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:30:08,348 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:08] "GET /pois/restaurant?lat=-15.8276906&lon=-70.0173569&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:30:08,378 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:08] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:30:11,964 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:11] "GET /pois/restaurant?lat=-15.8276906&lon=-70.0173569&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:30:11,989 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:11] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:30:20,743 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:30:20] "GET /directions?start_lat=-15.8276906&start_lon=-70.0173569&end_lat=-15.8311026&end_lon=-70.0210602 HTTP/1.1" 200 -
+2024-10-10 21:31:02,905 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:02] "GET /directions?start_lat=-15.8276906&start_lon=-70.0173569&end_lat=-15.8311053&end_lon=-70.0210662 HTTP/1.1" 200 -
+2024-10-10 21:31:12,121 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:12] "GET / HTTP/1.1" 200 -
+2024-10-10 21:31:12,152 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:12] "[33mGET /api/placeholder/600/400 HTTP/1.1[0m" 404 -
+2024-10-10 21:31:12,202 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:12] "[35m[1mGET /weather?lat=-6.7817306&lon=-79.8408787 HTTP/1.1[0m" 503 -
+2024-10-10 21:31:14,005 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:14] "GET /pois/restaurant?lat=-6.7817306&lon=-79.8408787&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:31:24,474 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:24] "GET /pois/restaurant?lat=-15.827321196708237&lon=-70.01735006499634&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:31:24,499 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:24] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:31:29,854 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:29] "GET /directions?start_lat=-15.827321196708237&start_lon=-70.01735006499634&end_lat=-15.8311026&end_lon=-70.0210602 HTTP/1.1" 200 -
+2024-10-10 21:31:32,420 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:32] "GET /directions?start_lat=-15.827321196708237&start_lon=-70.01735006499634&end_lat=-15.8311053&end_lon=-70.0210662 HTTP/1.1" 200 -
+2024-10-10 21:31:35,620 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:35] "GET /directions?start_lat=-15.827321196708237&start_lon=-70.01735006499634&end_lat=-15.8311053&end_lon=-70.0210662 HTTP/1.1" 200 -
+2024-10-10 21:31:50,167 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:50] "GET /pois/attraction?lat=-15.827321196708237&lon=-70.01735006499634&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:31:50,183 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:50] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 21:31:58,832 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:31:58] "GET /directions?start_lat=-15.827321196708237&start_lon=-70.01735006499634&end_lat=-15.8202693&end_lon=-70.0287285 HTTP/1.1" 200 -
+2024-10-10 21:32:11,464 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:32:11] "GET /directions?start_lat=-15.827321196708237&start_lon=-70.01735006499634&end_lat=-15.8202693&end_lon=-70.0287285 HTTP/1.1" 200 -
+2024-10-10 21:35:58,605 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:35:58,621 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:35:58,621 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:36:07,055 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:07] "GET / HTTP/1.1" 200 -
+2024-10-10 21:36:07,200 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:07] "[33mGET /img/3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:36:07,382 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 21:36:11,359 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:11] "[35m[1mGET /weather?lat=-15.827357874186708&lon=-70.01734827766744 HTTP/1.1[0m" 503 -
+2024-10-10 21:36:30,502 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:30] "GET / HTTP/1.1" 200 -
+2024-10-10 21:36:30,512 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:30] "[33mGET /img/3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:36:30,604 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:30] "[35m[1mGET /weather?lat=-15.827357874186708&lon=-70.01734827766744 HTTP/1.1[0m" 503 -
+2024-10-10 21:36:31,637 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:31] "GET / HTTP/1.1" 200 -
+2024-10-10 21:36:31,648 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:31] "[33mGET /img/3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:36:31,724 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:36:31] "[35m[1mGET /weather?lat=-15.827357874186708&lon=-70.01734827766744 HTTP/1.1[0m" 503 -
+2024-10-10 21:37:05,160 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:37:05,176 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:37:05,176 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:37:10,035 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:37:10] "GET / HTTP/1.1" 200 -
+2024-10-10 21:37:10,171 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:37:10] "[33mGET /img/3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:37:10,411 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:37:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 21:37:14,354 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:37:14] "[35m[1mGET /weather?lat=-15.82726288360923&lon=-70.01736068630717 HTTP/1.1[0m" 503 -
+2024-10-10 21:38:19,277 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:38:19,292 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:38:19,292 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:38:25,276 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:38:25] "GET / HTTP/1.1" 200 -
+2024-10-10 21:38:25,421 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:38:25] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:38:25,670 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:38:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 21:38:29,710 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:38:29] "[35m[1mGET /weather?lat=-15.827240018385336&lon=-70.01736847659676 HTTP/1.1[0m" 503 -
+2024-10-10 21:40:18,829 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:40:18,861 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:40:18,861 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:40:21,795 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:40:21] "GET / HTTP/1.1" 200 -
+2024-10-10 21:40:21,935 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:40:21] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:40:21,946 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:40:21] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:40:22,242 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:40:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 21:40:26,144 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:40:26] "[35m[1mGET /weather?lat=-15.827266471599556&lon=-70.01736022272111 HTTP/1.1[0m" 503 -
+2024-10-10 21:41:44,572 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:41:44,587 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:41:44,587 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:41:49,752 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:41:49] "GET / HTTP/1.1" 200 -
+2024-10-10 21:41:49,882 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:41:49] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:41:50,096 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:41:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 21:41:50,162 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:41:50] "[35m[1mGET /weather?lat=-15.827266471599556&lon=-70.01736022272111 HTTP/1.1[0m" 503 -
+2024-10-10 21:59:27,048 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 21:59:27,048 - __main__ - ERROR - API key de Unsplash no encontrada
+2024-10-10 21:59:27,062 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 21:59:27,063 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 21:59:30,542 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:59:30] "GET / HTTP/1.1" 200 -
+2024-10-10 21:59:30,654 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:59:30] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:59:30,905 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:59:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 21:59:34,871 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:59:34] "[35m[1mGET /weather?lat=-15.827203611602101&lon=-70.01737196041404 HTTP/1.1[0m" 503 -
+2024-10-10 21:59:40,229 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:59:40] "GET / HTTP/1.1" 200 -
+2024-10-10 21:59:40,240 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:59:40] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 21:59:40,337 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:59:40] "[35m[1mGET /weather?lat=-15.827203611602101&lon=-70.01737196041404 HTTP/1.1[0m" 503 -
+2024-10-10 21:59:44,637 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:59:44] "GET /pois/hotel?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 21:59:44,660 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 21:59:44] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:00:26,332 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:00:26] "GET /directions?start_lat=-15.827203611602101&start_lon=-70.01737196041404&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 22:02:44,031 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:02:44] "GET /pois/attraction?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:02:44,031 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:02:44] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:04:17,285 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:04:17] "GET /pois/attraction?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:04:17,303 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:04:17] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:04:18,035 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:04:18] "GET /pois/attraction?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:04:18,052 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:04:18] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:04:28,116 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:04:28] "GET /pois/attraction?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:04:28,132 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:04:28] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:06:03,292 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 22:06:03,292 - __main__ - ERROR - API key de Unsplash no encontrada
+2024-10-10 22:06:03,305 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 22:06:03,306 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 22:08:38,534 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:08:38] "GET / HTTP/1.1" 200 -
+2024-10-10 22:08:38,694 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:08:38] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 22:08:38,932 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:08:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 22:08:39,034 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:08:39] "[35m[1mGET /weather?lat=-15.827203611602101&lon=-70.01737196041404 HTTP/1.1[0m" 503 -
+2024-10-10 22:08:49,214 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:08:49] "GET /pois/hotel?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:08:49,233 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:08:49] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:08:52,044 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:08:52] "[35m[1mGET /weather?lat=-15.827203611602101&lon=-70.01737196041404 HTTP/1.1[0m" 503 -
+2024-10-10 22:08:57,964 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:08:57] "GET /pois/hotel?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:08:57,984 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:08:57] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:09:04,663 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:09:04] "GET /pois/hotel?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:09:04,679 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:09:04] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:09:09,711 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:09:09] "GET /directions?start_lat=-15.827203611602101&start_lon=-70.01737196041404&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 22:09:21,592 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:09:21] "GET /pois/restaurant?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:09:21,609 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:09:21] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:09:37,224 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:09:37] "GET /pois/attraction?lat=-15.827203611602101&lon=-70.01737196041404&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:19:37,615 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 22:19:37,631 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 22:19:37,631 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 22:19:42,086 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:19:42] "GET / HTTP/1.1" 200 -
+2024-10-10 22:19:42,225 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:19:42] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 22:19:42,407 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:19:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 22:19:46,489 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:19:46] "[35m[1mGET /weather?lat=-15.827187378747148&lon=-70.0173725347872 HTTP/1.1[0m" 503 -
+2024-10-10 22:19:52,556 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:19:52] "GET /pois/hotel?lat=-15.827187378747148&lon=-70.0173725347872&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:19:52,586 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:19:52] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:20:13,020 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:20:13] "GET /pois/attraction?lat=-15.827187378747148&lon=-70.0173725347872&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:20:13,040 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:20:13] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:22:25,319 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:22:25] "GET /pois/attraction?lat=-15.827187378747148&lon=-70.0173725347872&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:22:25,336 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:22:25] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:23:01,997 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:23:01] "GET /pois/restaurant?lat=-15.827187378747148&lon=-70.0173725347872&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:23:02,024 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:23:02] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:30:09,968 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 22:30:09,978 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 22:30:09,980 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 22:30:13,330 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:13] "GET / HTTP/1.1" 200 -
+2024-10-10 22:30:13,384 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:13] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 22:30:17,649 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:17] "[35m[1mGET /weather?lat=-15.827251364501596&lon=-70.01736206131723 HTTP/1.1[0m" 503 -
+2024-10-10 22:30:22,553 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:22] "GET /pois/restaurant?lat=-15.827251364501596&lon=-70.01736206131723&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:30:47,636 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 22:30:47,646 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 22:30:47,647 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 22:30:51,272 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:51] "GET / HTTP/1.1" 200 -
+2024-10-10 22:30:51,405 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:51] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 22:30:51,663 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 22:30:51,775 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:51] "[35m[1mGET /weather?lat=-15.827251364501596&lon=-70.01736206131723 HTTP/1.1[0m" 503 -
+2024-10-10 22:30:55,517 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:55] "GET /pois/hotel?lat=-15.827251364501596&lon=-70.01736206131723&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:30:59,732 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:30:59] "GET /pois/hotel?lat=-15.827251364501596&lon=-70.01736206131723&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:31:23,884 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 22:31:23,895 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 22:31:23,896 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 22:31:26,947 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:31:26] "GET / HTTP/1.1" 200 -
+2024-10-10 22:31:27,070 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:31:27] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 22:31:27,261 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:31:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 22:31:31,161 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:31:31] "[35m[1mGET /weather?lat=-15.827262806206026&lon=-70.01736442672123 HTTP/1.1[0m" 503 -
+2024-10-10 22:31:34,961 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:31:34] "GET /pois/hotel?lat=-15.827262806206026&lon=-70.01736442672123&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:31:34,986 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:31:34] "[33mGET /undefined HTTP/1.1[0m" 404 -
+2024-10-10 22:32:01,108 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:32:01] "GET /directions?start_lat=-15.827262806206026&start_lon=-70.01736442672123&end_lat=-15.8366558&end_lon=-70.0270477 HTTP/1.1" 200 -
+2024-10-10 22:32:27,987 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:32:27] "GET /pois/restaurant?lat=-15.827262806206026&lon=-70.01736442672123&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:32:28,017 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:32:28] "[33mGET /undefined HTTP/1.1[0m" 404 -
+2024-10-10 22:32:59,166 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:32:59] "[35m[1mGET /weather?lat=-15.827229649676532&lon=-70.01738069355041 HTTP/1.1[0m" 503 -
+2024-10-10 22:33:12,134 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:33:12] "GET /pois/attraction?lat=-15.827229649676532&lon=-70.01738069355041&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:33:12,151 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:33:12] "[33mGET /undefined HTTP/1.1[0m" 404 -
+2024-10-10 22:35:19,603 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 22:35:19,603 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 22:35:19,603 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 22:35:24,064 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:35:24] "GET / HTTP/1.1" 200 -
+2024-10-10 22:35:24,180 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:35:24] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 22:35:24,378 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:35:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 22:35:28,327 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:35:28] "[35m[1mGET /weather?lat=-15.827270399726263&lon=-70.01736580777235 HTTP/1.1[0m" 503 -
+2024-10-10 22:37:20,985 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 22:37:20,996 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 22:37:20,996 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 22:37:26,479 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:37:26] "GET / HTTP/1.1" 200 -
+2024-10-10 22:37:26,597 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:37:26] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 22:37:26,810 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:37:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 22:37:26,896 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:37:26] "[35m[1mGET /weather?lat=-15.827288968333937&lon=-70.01736576825309 HTTP/1.1[0m" 503 -
+2024-10-10 22:39:14,296 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 22:39:14,312 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 22:39:14,312 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 22:39:17,798 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:39:17] "GET / HTTP/1.1" 200 -
+2024-10-10 22:39:17,958 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:39:17] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 22:39:18,291 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:39:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 22:39:18,543 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:39:18] "[35m[1mGET /weather?lat=-15.827252581200565&lon=-70.0173583868043 HTTP/1.1[0m" 503 -
+2024-10-10 22:39:22,380 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:39:22] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:39:22,402 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:39:22] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:39:35,796 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:39:35] "GET /pois/attraction?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:39:35,796 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:39:35] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:39:56,910 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:39:56] "GET /directions?start_lat=-15.827252581200565&start_lon=-70.0173583868043&end_lat=-15.78634&end_lon=-70.0285075 HTTP/1.1" 200 -
+2024-10-10 22:40:16,420 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:16] "GET /pois/attraction?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:40:16,430 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:16] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:40:17,953 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:17] "GET /pois/attraction?lat=-15.827252581200565&lon=-70.0173583868043&rating=3 HTTP/1.1" 200 -
+2024-10-10 22:40:17,990 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:17] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:40:18,731 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:18] "GET /pois/attraction?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:40:18,739 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:18] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:40:19,769 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:19] "GET /pois/attraction?lat=-15.827252581200565&lon=-70.0173583868043&rating=4 HTTP/1.1" 200 -
+2024-10-10 22:40:19,795 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:19] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:40:24,468 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:24] "GET /pois/attraction?lat=-15.827252581200565&lon=-70.0173583868043&rating=3 HTTP/1.1" 200 -
+2024-10-10 22:40:24,476 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:24] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:40:27,804 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:27] "GET /pois/attraction?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 22:40:27,812 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:40:27] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 22:44:53,937 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:44:53] "GET /directions?start_lat=-15.827252581200565&start_lon=-70.0173583868043&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 22:54:02,117 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 22:54:02] "GET /directions?start_lat=-15.827252581200565&start_lon=-70.0173583868043&end_lat=-15.8234284&end_lon=-70.0054119 HTTP/1.1" 200 -
+2024-10-10 23:05:55,789 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-10 23:05:55,814 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-10 23:05:55,814 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-10 23:06:03,171 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:06:03] "GET / HTTP/1.1" 200 -
+2024-10-10 23:06:03,391 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:06:03] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 23:06:03,730 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:06:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 23:06:03,884 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:06:03] "[35m[1mGET /weather?lat=-15.827252581200565&lon=-70.0173583868043 HTTP/1.1[0m" 503 -
+2024-10-10 23:06:17,142 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:06:17] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:06:17,189 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:06:17] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:08:57,383 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:08:57] "GET / HTTP/1.1" 200 -
+2024-10-10 23:08:57,445 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:08:57] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-10 23:08:57,817 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:08:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-10 23:08:57,871 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:08:57] "[35m[1mGET /weather?lat=-15.827252581200565&lon=-70.0173583868043 HTTP/1.1[0m" 503 -
+2024-10-10 23:09:03,278 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:03] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:03,310 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:03] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:18,708 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:18] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:18,739 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:18] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:19,788 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:19] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:19,820 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:19] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:20,980 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:20] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:21,027 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:21] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:22,070 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:22] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:22,101 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:22] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:23,413 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:23] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:23,429 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:23] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:24,514 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:24] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:24,529 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:24] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:25,708 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:25] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:25,770 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:25] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:27,201 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:27] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:27,234 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:27] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:28,406 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:28] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:28,453 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:28] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:29,187 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:29] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:29,225 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:29] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:30,531 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:30] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:30,578 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:30] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:42,323 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:42] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:42,355 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:42] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:43,947 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:43] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=3 HTTP/1.1" 200 -
+2024-10-10 23:09:43,979 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:43] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:44,724 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:44] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:09:44,755 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:44] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:46,235 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:46] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=3 HTTP/1.1" 200 -
+2024-10-10 23:09:46,266 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:46] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:09:46,909 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:46] "GET /pois/hotel?lat=-15.827252581200565&lon=-70.0173583868043&rating=4 HTTP/1.1" 200 -
+2024-10-10 23:09:46,940 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:09:46] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:10:00,518 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:10:00] "GET /directions?start_lat=-15.827252581200565&start_lon=-70.0173583868043&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-10 23:10:10,418 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:10:10] "GET /directions?start_lat=-15.827252581200565&start_lon=-70.0173583868043&end_lat=-15.8376323&end_lon=-70.0201825 HTTP/1.1" 200 -
+2024-10-10 23:10:24,040 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:10:24] "GET /pois/restaurant?lat=-15.827252581200565&lon=-70.0173583868043&rating=4 HTTP/1.1" 200 -
+2024-10-10 23:10:24,071 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:10:24] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:10:34,376 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:10:34] "GET /pois/attraction?lat=-15.827252581200565&lon=-70.0173583868043&rating=4 HTTP/1.1" 200 -
+2024-10-10 23:10:34,392 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:10:34] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:10:38,732 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:10:38] "GET /pois/attraction?lat=-15.827252581200565&lon=-70.0173583868043&rating=0 HTTP/1.1" 200 -
+2024-10-10 23:10:38,748 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:10:38] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-10 23:10:45,816 - werkzeug - INFO - 127.0.0.1 - - [10/Oct/2024 23:10:45] "GET /directions?start_lat=-15.827252581200565&start_lon=-70.0173583868043&end_lat=-15.8202693&end_lon=-70.0287285 HTTP/1.1" 200 -
+2024-10-11 07:24:29,297 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-11 07:24:29,334 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-11 07:24:29,334 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-11 07:24:36,934 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:24:36] "GET / HTTP/1.1" 200 -
+2024-10-11 07:24:37,042 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:24:37] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-11 07:24:37,581 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:24:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-11 07:24:41,377 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:24:41] "[35m[1mGET /weather?lat=-15.825268&lon=-70.01771 HTTP/1.1[0m" 503 -
+2024-10-11 07:24:51,787 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:24:51] "[35m[1mGET /weather?lat=-15.825268&lon=-70.01771 HTTP/1.1[0m" 503 -
+2024-10-11 07:25:15,709 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:15] "GET / HTTP/1.1" 200 -
+2024-10-11 07:25:15,733 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:15] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-11 07:25:15,970 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:15] "[35m[1mGET /weather?lat=-15.825268&lon=-70.01771 HTTP/1.1[0m" 503 -
+2024-10-11 07:25:27,356 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:27] "GET /pois/hotel?lat=-15.825268&lon=-70.01771&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:25:27,387 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:27] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:25:35,018 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:35] "GET /pois/hotel?lat=-15.825268&lon=-70.01771&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:25:35,081 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:35] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:25:45,804 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:45] "GET /pois/hotel?lat=-15.825268&lon=-70.01771&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:25:45,851 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:45] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:25:46,879 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:46] "GET /pois/hotel?lat=-15.825268&lon=-70.01771&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:25:46,926 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:46] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:25:51,287 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:51] "GET /pois/hotel?lat=-15.825268&lon=-70.01771&rating=3 HTTP/1.1" 200 -
+2024-10-11 07:25:51,318 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:51] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:25:52,563 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:52] "GET /pois/hotel?lat=-15.825268&lon=-70.01771&rating=4 HTTP/1.1" 200 -
+2024-10-11 07:25:52,587 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:52] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:25:54,022 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:54] "GET /pois/hotel?lat=-15.825268&lon=-70.01771&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:25:54,053 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:25:54] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:26:09,304 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:26:09] "GET /directions?start_lat=-15.825268&start_lon=-70.01771&end_lat=-15.8253146&end_lon=-70.0112268 HTTP/1.1" 200 -
+2024-10-11 07:26:41,473 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:26:41] "GET /pois/attraction?lat=-15.825268&lon=-70.01771&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:26:41,505 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:26:41] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:27:25,378 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:27:25] "GET /directions?start_lat=-15.825268&start_lon=-70.01771&end_lat=-15.78634&end_lon=-70.0285075 HTTP/1.1" 200 -
+2024-10-11 07:55:56,293 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-11 07:55:56,324 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-11 07:55:56,324 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-11 07:56:01,096 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:01] "GET / HTTP/1.1" 200 -
+2024-10-11 07:56:01,301 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:01] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-11 07:56:01,715 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-11 07:56:05,720 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:05] "[35m[1mGET /weather?lat=-15.824630394522565&lon=-70.01761794520041 HTTP/1.1[0m" 503 -
+2024-10-11 07:56:09,156 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:09] "GET /pois/hotel?lat=-15.824630394522565&lon=-70.01761794520041&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:56:09,188 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:09] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:56:13,820 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:13] "GET /pois/hotel?lat=-15.824630394522565&lon=-70.01761794520041&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:56:13,852 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:13] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:56:16,256 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:16] "GET /pois/hotel?lat=-15.824630394522565&lon=-70.01761794520041&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:56:16,285 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:16] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:56:19,189 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:19] "GET /pois/restaurant?lat=-15.824630394522565&lon=-70.01761794520041&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:56:19,236 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:19] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:56:22,863 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:22] "GET /pois/attraction?lat=-15.824630394522565&lon=-70.01761794520041&rating=0 HTTP/1.1" 200 -
+2024-10-11 07:56:22,894 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:56:22] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 07:57:01,754 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 07:57:01] "GET /directions?start_lat=-15.824630394522565&start_lon=-70.01761794520041&end_lat=-15.8202693&end_lon=-70.0287285 HTTP/1.1" 200 -
+2024-10-11 08:04:50,732 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-11 08:04:50,763 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.43.170:5000
+2024-10-11 08:04:50,763 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-11 08:05:08,977 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:08] "GET / HTTP/1.1" 200 -
+2024-10-11 08:05:09,204 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:09] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-11 08:05:09,578 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-11 08:05:13,598 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:13] "[35m[1mGET /weather?lat=-15.824609923981193&lon=-70.01774536520377 HTTP/1.1[0m" 503 -
+2024-10-11 08:05:19,736 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:19] "[35m[1mGET /weather?lat=-15.824609923981193&lon=-70.01774536520377 HTTP/1.1[0m" 503 -
+2024-10-11 08:05:39,865 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:39] "GET / HTTP/1.1" 200 -
+2024-10-11 08:05:40,092 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:40] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-11 08:05:40,663 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-11 08:05:40,826 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:40] "[35m[1mGET /weather?lat=-15.8234692&lon=-70.0176309 HTTP/1.1[0m" 503 -
+2024-10-11 08:05:44,294 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:44] "[35m[1mGET /weather?lat=-15.8234692&lon=-70.0176309 HTTP/1.1[0m" 503 -
+2024-10-11 08:05:44,969 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:44] "[35m[1mGET /weather?lat=-15.8234692&lon=-70.0176309 HTTP/1.1[0m" 503 -
+2024-10-11 08:05:57,831 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:57] "GET / HTTP/1.1" 200 -
+2024-10-11 08:05:57,847 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:57] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-11 08:05:58,066 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:05:58] "[35m[1mGET /weather?lat=-15.824609923981193&lon=-70.01774536520377 HTTP/1.1[0m" 503 -
+2024-10-11 08:06:08,293 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:06:08] "[35m[1mGET /weather?lat=-15.824609923981193&lon=-70.01774536520377 HTTP/1.1[0m" 503 -
+2024-10-11 08:06:09,930 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:06:09] "GET / HTTP/1.1" 200 -
+2024-10-11 08:06:09,942 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:06:09] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-11 08:06:10,337 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:06:10] "[35m[1mGET /weather?lat=-15.824609923981193&lon=-70.01774536520377 HTTP/1.1[0m" 503 -
+2024-10-11 08:06:24,085 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:06:24] "GET /pois/hotel?lat=-15.8234692&lon=-70.0176309&rating=0 HTTP/1.1" 200 -
+2024-10-11 08:06:24,121 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:06:24] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-11 08:07:02,586 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:07:02] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-11 08:07:03,588 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:07:03] "[35m[1mGET /weather?lat=-15.8234692&lon=-70.0176309 HTTP/1.1[0m" 503 -
+2024-10-11 08:07:03,676 - werkzeug - INFO - 127.0.0.1 - - [11/Oct/2024 08:07:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 09:43:20,632 - __main__ - ERROR - API key de OpenWeatherMap no encontrada
+2024-10-13 09:43:20,654 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2024-10-13 09:43:20,654 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 09:43:25,667 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:43:25] "GET / HTTP/1.1" 200 -
+2024-10-13 09:43:25,998 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:43:25] "[33mGET /3.jpg HTTP/1.1[0m" 404 -
+2024-10-13 09:43:26,405 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:43:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-13 09:43:30,512 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:43:30] "[35m[1mGET /weather?lat=-15.480717126257467&lon=-70.10596721832712 HTTP/1.1[0m" 503 -
+2024-10-13 09:43:41,209 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:43:41] "GET /pois/hotel?lat=-15.480717126257467&lon=-70.10596721832712&rating=0 HTTP/1.1" 200 -
+2024-10-13 09:43:41,240 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:43:41] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-13 09:43:53,283 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:43:53] "GET /pois/attraction?lat=-15.480717126257467&lon=-70.10596721832712&rating=0 HTTP/1.1" 200 -
+2024-10-13 09:43:53,299 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:43:53] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-13 09:44:01,669 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:01] "GET /directions?start_lat=-15.480717126257467&start_lon=-70.10596721832712&end_lat=-15.5018271&end_lon=-70.1393804 HTTP/1.1" 200 -
+2024-10-13 09:44:27,636 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:27] "GET /pois/attraction?lat=-15.480717126257467&lon=-70.10596721832712&rating=0 HTTP/1.1" 200 -
+2024-10-13 09:44:27,644 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:27] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-13 09:44:28,337 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:28] "GET /pois/attraction?lat=-15.480717126257467&lon=-70.10596721832712&rating=0 HTTP/1.1" 200 -
+2024-10-13 09:44:28,353 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:28] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-13 09:44:28,400 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:28] "GET /pois/attraction?lat=-15.480717126257467&lon=-70.10596721832712&rating=0 HTTP/1.1" 200 -
+2024-10-13 09:44:28,416 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:28] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-13 09:44:28,512 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:28] "GET /pois/attraction?lat=-15.480717126257467&lon=-70.10596721832712&rating=0 HTTP/1.1" 200 -
+2024-10-13 09:44:28,526 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:28] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-13 09:44:31,995 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:31] "GET /pois/attraction?lat=-15.480717126257467&lon=-70.10596721832712&rating=0 HTTP/1.1" 200 -
+2024-10-13 09:44:32,003 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:32] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
+2024-10-13 09:44:40,345 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:40] "GET /pois/hotel?lat=-15.480717126257467&lon=-70.10596721832712&rating=0 HTTP/1.1" 200 -
+2024-10-13 09:44:40,355 - werkzeug - INFO - 127.0.0.1 - - [13/Oct/2024 09:44:40] "[33mGET /api/placeholder/400/300 HTTP/1.1[0m" 404 -
